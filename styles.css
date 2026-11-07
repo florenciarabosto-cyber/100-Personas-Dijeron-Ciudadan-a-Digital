@@ -1,0 +1,407 @@
+
+/* PÁGINA */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f1fa;
+    color: #333333;
+}
+
+/* ENCABEZADO */
+
+header {
+    background-color: #6036a6;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin: 0;
+}
+
+header h2 {
+    color: #ffd54f;
+    font-size: 28px;
+    margin: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* MENÚ */
+
+nav {
+    background-color: #32186f;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffd54f;
+}
+
+/* CONTENIDO */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+section {
+    background-color: white;
+    margin: 30px 0;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+section h2 {
+    text-align: center;
+    color: #6036a6;
+    font-size: 28px;
+}
+
+section p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.centrado {
+    text-align: center;
+}
+
+/* TARJETAS */
+
+.contenedor-riesgos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 25px;
+}
+
+article {
+    background-color: #eee8f8;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+}
+
+article h3 {
+    color: #6036a6;
+    font-size: 20px;
+}
+
+article p {
+    font-size: 16px;
+}
+
+/* PREVENCIÓN */
+
+#cuidados ul {
+    width: 75%;
+    margin: auto;
+    font-size: 17px;
+    line-height: 2;
+}
+
+/* JUEGO */
+
+#juego {
+    background-color: #32186f;
+    color: white;
+    text-align: center;
+    padding: 35px;
+}
+
+.titulo-juego {
+    background-color: #6036a6;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.titulo-juego h2 {
+    color: white;
+    font-size: 38px;
+    margin: 0;
+}
+
+.titulo-juego p {
+    color: #ffd54f;
+    font-size: 25px;
+    margin: 8px;
+}
+
+.instrucciones {
+    max-width: 750px;
+    margin: 25px auto;
+}
+
+#juego h3 {
+    color: #ffd54f;
+    font-size: 27px;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    font-size: 20px;
+}
+
+/* PREGUNTA */
+
+.pregunta {
+    background-color: #47258c;
+    width: 80%;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.pregunta p {
+    font-size: 19px;
+}
+
+/* PUNTAJE */
+
+.puntaje {
+    display: inline-block;
+    background-color: #ffd54f;
+    color: #32186f;
+    padding: 12px 25px;
+    margin: 15px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* TABLERO */
+
+.tablero {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #241052;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.tablero div {
+    background-color: white;
+    color: #32186f;
+    padding: 14px;
+    margin: 9px;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    overflow: auto;
+}
+
+.tablero span {
+    float: right;
+    background-color: #ffd54f;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+.tablero .descubierta {
+    background-color: #ffd54f;
+    color: #32186f;
+}
+
+/* FORMULARIO */
+
+.formulario-juego {
+    margin-top: 25px;
+}
+
+.formulario-juego label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.formulario-juego input {
+    width: 65%;
+    padding: 12px;
+    margin: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 17px;
+}
+
+/* BOTONES */
+
+button {
+    background-color: #ffd54f;
+    color: #32186f;
+    border: none;
+    padding: 13px 30px;
+    margin: 8px;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffe68a;
+}
+
+/* MENSAJES */
+
+#mensaje {
+    font-size: 19px;
+    font-weight: bold;
+    min-height: 30px;
+}
+
+.correcto {
+    color: #ffd54f;
+}
+
+.incorrecto {
+    color: #ffffff;
+}
+
+/* RONDA 3 */
+
+.situacion {
+    background-color: #47258c;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 12px;
+    max-width: 750px;
+}
+
+.situacion h4 {
+    color: #ffd54f;
+    font-size: 22px;
+}
+
+.situacion p {
+    font-size: 19px;
+}
+
+#formularioDesafio {
+    max-width: 750px;
+    margin: auto;
+}
+
+.opcion {
+    display: block;
+    background-color: #eee8f8;
+    color: #32186f;
+    text-align: left;
+    padding: 15px;
+    margin: 12px 0;
+    border-radius: 8px;
+    cursor: pointer;
+    line-height: 1.5;
+}
+
+.opcion:hover {
+    background-color: #ffd54f;
+}
+
+.opcion input {
+    margin-right: 10px;
+}
+
+/* RESULTADO FINAL */
+
+#resultadoFinal {
+    background-color: #47258c;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 15px;
+}
+
+#resultadoFinal h3 {
+    color: #ffd54f;
+}
+
+.puntaje-final {
+    font-size: 25px !important;
+    font-weight: bold;
+    color: #ffd54f;
+}
+
+/* OCULTAR */
+
+.oculto {
+    display: none !important;
+}
+
+/* PIE */
+
+footer {
+    background-color: #32186f;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+/* CELULARES */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .contenedor-riesgos {
+        grid-template-columns: 1fr;
+    }
+
+    #cuidados ul {
+        width: 100%;
+    }
+
+    #juego {
+        padding: 18px;
+    }
+
+    .titulo-juego h2 {
+        font-size: 28px;
+    }
+
+    .pregunta {
+        width: 100%;
+    }
+
+    .tablero {
+        width: 100%;
+        padding: 8px;
+    }
+
+    .tablero div {
+        font-size: 16px;
+    }
+
+    .formulario-juego input {
+        width: 90%;
+    }
+}

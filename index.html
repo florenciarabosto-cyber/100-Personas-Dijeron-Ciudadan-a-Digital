@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>100 Personas Dijeron - Ciudadanía Digital</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header>
+    <h1>100 PERSONAS DIJERON</h1>
+    <h2>Ciudadanía Digital</h2>
+    <p>¿Cuánto sabés sobre los riesgos en Internet?</p>
+</header>
+
+<nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#riesgos">Riesgos</a>
+    <a href="#cuidados">Cómo cuidarnos</a>
+    <a href="#juego">Juego</a>
+</nav>
+
+<main>
+
+    <section id="inicio">
+        <h2>¿Qué es la ciudadanía digital?</h2>
+
+        <p>
+            La ciudadanía digital es la forma en que usamos
+            la tecnología y nos relacionamos con otras personas
+            en los espacios digitales.
+        </p>
+
+        <p>
+            Internet nos permite comunicarnos, aprender, jugar,
+            buscar información y compartir contenidos.
+        </p>
+
+        <p>
+            Para aprovechar estas posibilidades es importante
+            utilizar la tecnología de manera segura,
+            responsable y respetuosa.
+        </p>
+    </section>
+
+    <section id="riesgos">
+
+        <h2>Riesgos en Internet</h2>
+
+        <p class="centrado">
+            Conocer los riesgos nos ayuda a identificarlos
+            y saber cómo actuar.
+        </p>
+
+        <div class="contenedor-riesgos">
+
+            <article>
+                <h3>Ciberbullying</h3>
+                <p>
+                    Es el acoso hacia una persona
+                    a través de medios digitales.
+                </p>
+            </article>
+
+            <article>
+                <h3>Grooming</h3>
+                <p>
+                    Ocurre cuando una persona adulta utiliza
+                    Internet para acercarse a un niño,
+                    niña o adolescente con intenciones sexuales.
+                </p>
+            </article>
+
+            <article>
+                <h3>Sexting</h3>
+                <p>
+                    Es el envío o intercambio de imágenes,
+                    videos o mensajes de contenido íntimo.
+                </p>
+            </article>
+
+            <article>
+                <h3>Phishing</h3>
+                <p>
+                    Es un engaño que busca obtener
+                    información personal o contraseñas.
+                </p>
+            </article>
+
+            <article>
+                <h3>Stalking</h3>
+                <p>
+                    Es el seguimiento o vigilancia
+                    insistente hacia una persona.
+                </p>
+            </article>
+
+            <article>
+                <h3>Ciberadicción</h3>
+                <p>
+                    Se relaciona con el uso excesivo
+                    de Internet o dispositivos digitales.
+                </p>
+            </article>
+
+        </div>
+    </section>
+
+    <section id="cuidados">
+
+        <h2>¿Cómo podemos cuidarnos?</h2>
+
+        <ul>
+            <li>No compartir datos personales.</li>
+            <li>Utilizar contraseñas seguras.</li>
+            <li>No abrir enlaces sospechosos.</li>
+            <li>Bloquear o denunciar situaciones de riesgo.</li>
+            <li>No aceptar solicitudes de desconocidos.</li>
+            <li>Pedir ayuda a una persona adulta de confianza.</li>
+        </ul>
+
+    </section>
+
+    <section id="juego">
+
+        <div class="titulo-juego">
+            <h2>100 PERSONAS DIJERON</h2>
+            <p>Ciudadanía Digital</p>
+        </div>
+
+        <p class="instrucciones">
+            ¡Bienvenido/a al desafío!
+            Tu misión es demostrar cuánto sabés sobre
+            ciudadanía digital. Descubrí las respuestas
+            del tablero, acumulá puntos y resolvé
+            el desafío final.
+        </p>
+
+        <h3 id="numeroRonda">RONDA 1</h3>
+
+        <p class="subtitulo" id="nombreRonda">
+            Reconocemos los riesgos
+        </p>
+
+        <div class="pregunta">
+            <p><strong>100 personas dijeron...</strong></p>
+
+            <p id="textoPregunta">
+                ¿Cuáles son algunos de los riesgos
+                que podemos encontrar en Internet?
+            </p>
+        </div>
+
+        <div class="puntaje">
+            PUNTOS: <span id="puntos">0</span>
+        </div>
+
+        <!-- TABLERO PARA RONDAS 1 Y 2 -->
+
+        <div id="tablero" class="tablero">
+            <div id="respuesta1"></div>
+            <div id="respuesta2"></div>
+            <div id="respuesta3"></div>
+            <div id="respuesta4"></div>
+            <div id="respuesta5"></div>
+            <div id="respuesta6"></div>
+        </div>
+
+        <!-- FORMULARIO PARA RONDAS 1 Y 2 -->
+
+        <form id="formularioJuego" class="formulario-juego">
+
+            <label for="respuestaUsuario">
+                Escribí una respuesta:
+            </label>
+
+            <br>
+
+            <input
+                type="text"
+                id="respuestaUsuario"
+                placeholder="Escribí tu respuesta"
+                autocomplete="off">
+
+            <br>
+
+            <button type="submit">RESPONDER</button>
+
+        </form>
+
+        <!-- RONDA 3 -->
+
+        <div id="desafioFinal" class="oculto">
+
+            <div class="situacion">
+                <h4>¡Atención! Recibiste un mensaje</h4>
+
+                <p>
+                    "¡Felicitaciones! Ganaste un celular.
+                    Ingresá a este enlace y completá
+                    tus datos personales para recibir
+                    el premio".
+                </p>
+            </div>
+
+            <form id="formularioDesafio">
+
+                <p><strong>¿Qué harías en esta situación?</strong></p>
+
+                <label class="opcion">
+                    <input type="radio" name="decision" value="a">
+                    A. Ingresaría al enlace para comprobar
+                    si realmente gané.
+                </label>
+
+                <label class="opcion">
+                    <input type="radio" name="decision" value="b">
+                    B. Respondería el mensaje para preguntar
+                    quién lo envió.
+                </label>
+
+                <label class="opcion">
+                    <input type="radio" name="decision" value="c">
+                    C. No abriría el enlace, eliminaría
+                    el mensaje y lo reportaría.
+                </label>
+
+                <label class="opcion">
+                    <input type="radio" name="decision" value="d">
+                    D. Se lo enviaría a mis amigos
+                    para preguntarles qué piensan.
+                </label>
+
+                <button type="submit">COMPROBAR RESPUESTA</button>
+
+            </form>
+
+        </div>
+
+        <!-- RETROALIMENTACIÓN -->
+
+        <p id="mensaje" aria-live="polite"></p>
+
+        <!-- BOTÓN SIGUIENTE -->
+
+        <button id="siguiente" class="oculto" type="button">
+            SIGUIENTE RONDA
+        </button>
+
+        <!-- RESULTADO FINAL -->
+
+        <div id="resultadoFinal" class="oculto">
+
+            <h3>¡Felicitaciones!</h3>
+
+            <p>
+                Completaste las tres rondas de
+                100 Personas Dijeron: Ciudadanía Digital.
+            </p>
+
+            <p class="puntaje-final">
+                Puntaje final:
+                <span id="puntajeFinal">0</span> / 250
+            </p>
+
+            <p>
+                Reconocimiento obtenido:
+            </p>
+
+            <h3>Experto/a en Ciudadanía Digital</h3>
+
+            <p>
+                Recordá que ser un buen ciudadano digital
+                implica actuar de manera segura,
+                responsable y respetuosa.
+            </p>
+
+            <button type="button" id="reiniciar">
+                VOLVER A JUGAR
+            </button>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>Objeto de Aprendizaje - Ciudadanía Digital</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
